@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
   s.platform      = Gem::Platform::RUBY
   s.files         = Dir.glob("{lib,test}/**/*") + %w(LICENSE README Rakefile)
   
-  s.add_dependancy("fast-stemmer", ">= 1.0.0")
+  s.add_dependency("fast-stemmer", ">= 1.0.0")
 end
