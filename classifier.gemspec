@@ -10,5 +10,5 @@ Gem::Specification.new do |s|
   s.email         = ["removed@duetospam.com"]
   s.version       = "1.3.3"
   s.platform      = Gem::Platform::RUBY
-  s.files         = Dir.glob("{lib,test}/**/*") + %w(LICENSE README.rdoc Rakefile)
+  s.files         = Dir.glob("{lib,test}/**/*") + %w(LICENSE README Rakefile)
 end
