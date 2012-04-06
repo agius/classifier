@@ -11,4 +11,6 @@ Gem::Specification.new do |s|
   s.version       = "1.3.3"
   s.platform      = Gem::Platform::RUBY
   s.files         = Dir.glob("{lib,test}/**/*") + %w(LICENSE README Rakefile)
+  
+  s.add_dependancy("fast-stemmer", ">= 1.0.0")
 end
