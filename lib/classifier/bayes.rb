@@ -5,6 +5,8 @@
 module Classifier
 
 class Bayes
+  attr_accessor :categories, :total_words
+  
   # The class can be created with one or more categories, each of which will be
   # initialized and given a training method. E.g., 
   #      b = Classifier::Bayes.new 'Interesting', 'Uninteresting', 'Spam'
@@ -123,6 +125,15 @@ class Bayes
 	end
 	
 	alias append_category add_category
+	
+	def dump
+		{:categories => @categories, :total_words => @total_words}
+	end
+	
+	def load(import = {})
+		@categories = import[:categories]
+		@total_words = import[:total_words]
+	end
 end
 
 end
